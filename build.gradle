@@ -1,0 +1,19 @@
+plugins {
+    id "org.flywaydb.flyway" version "5.1.4"
+}
+
+apply plugin: 'java'
+
+flyway {
+  url = 'jdbc:sqlite:test.db'
+}
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+dependencies {
+    compile 'org.flywaydb:flyway-core:5.1.4'
+    compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.23.1'
+}

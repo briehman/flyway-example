@@ -2,3 +2,4 @@
 .gradletasknamecache
 .idea
 /*.iml
+/test.db
